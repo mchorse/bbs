@@ -344,7 +344,7 @@
     Plugin.register("bbs_exporter", {
         title: "BBS model exporter",
         author: "McHorse",
-        description: "Adds a model exporter which allows to export models for BBS model format",
+        description: "Adds a model exporter which allows to export models in BBS model format",
         icon: "fa-file-export",
         version: "1.0.0",
         variant: "both",
