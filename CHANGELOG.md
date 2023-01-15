@@ -1,9 +1,9 @@
 ## BBS 0.2
 
-This update is features support for localization of some European languages, bug fixes, and some nice tweaks.
+This update is features support for localization of some European languages, bug fixes, and some nice tweaks. Special thanks goes to Draacoun, Kirkus, Noozy and Rebane!
 
 * Added font rendering support of letters from: Portuguese, Russian, Ukrainian, French, German, Spanish, Italian, Swedish, Norwegian, Dutch and Danish
-* Added Poruguese, Russian and Ukrainian languages
+* Added Poruguese and Russian languages
 * Added font rendering formatting codes wave (§w, stacking increases vertical amplitude), shake (§s, stacking increases distance of shake) and rainbow (§n, stacking changes per letter rainbow colors or per entire text fragment) (Centryfuga)
 * Added language editor in utility panel (F6) that allows to edit current language's strings (it's userful mostly for translators)
 * Added walking camera mode in world menu (Ctrl + B) (Centryfuga)
@@ -12,6 +12,11 @@ This update is features support for localization of some European languages, bug
 * Added feature to connect two nodes by dragging on connection line (Пивовар)
 * Added atlas texture picker to tile set editor
 * Added tab keybind to toggle between panels in world menu (Kirkus)
+* Added `bbs.camera.lock()`, `bbs.camera.isLocked()`, `bbs.camera.set(x, y, z, yaw, pitch, roll, fov)` and `bbs.camera.unlock()` scripting methods to lock and unlock camera
+* Added `bbs.animations.play(id)`, `bbs.animations.isPlaying(id)` and `bbs.animations.stop(id)` scripting methods to play and stop animations
+* Added FOV options to player data and BBS' engine options
+* Added **Animation** and **HUD scene** trigger blocks
+* Added form hitbox options
 * Changed list icon in HUD scenes panel to an appropriate icon (The Bendy)
 * Fixed title in block model factory panel
 * Fixed crash when using inventory during scene recording (Kirkus)
@@ -24,7 +29,9 @@ This update is features support for localization of some European languages, bug
 * Fixed dialogue labels don't get correctly when they have new line(s) (Пивовар)
 * Fixed objectives not being created (Kirkus)
 * Fixed actors falling when switching to flight mode
+* Fixed form and texture picker panels could've been opened multiple times atop each other (Kirkus)
 * Improved forms by rewriting their properties to be separate objects (which also support tweening/transitioning)
+* Moved REPL panel to world menu
 
 ## BBS 0.1.1
 
