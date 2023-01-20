@@ -2,8 +2,10 @@
 
 This update is features support for localization of some European languages, bug fixes, and some nice tweaks. Special thanks goes to Draacoun, Kirkus, Noozy and Rebane!
 
-* Added font rendering support of letters from: Portuguese, Russian, Ukrainian, French, German, Spanish, Italian, Swedish, Norwegian, Dutch and Danish
-* Added Poruguese and Russian languages
+**IMPORTANT**: new default tile set atlas (`assets:textures/default_atlas.png`) was added, so in the future, the old default atlas texture (`assets:textures/atlas.png`) will be removed! 
+
+* Added font rendering support of letters from: Portuguese, Russian, Ukrainian, French, German, Spanish, Italian, Swedish, Norwegian, Dutch, Danish and Chinese (thanks to [zpix-pixel-font](https://github.com/SolidZORO/zpix-pixel-font))
+* Added Russian (by Kirkus) and Ukrainian (by Kirkus) languages
 * Added font rendering formatting codes wave (§w, stacking increases vertical amplitude), shake (§s, stacking increases distance of shake) and rainbow (§n, stacking changes per letter rainbow colors or per entire text fragment) (Centryfuga)
 * Added language editor in utility panel (F6) that allows to edit current language's strings (it's userful mostly for translators)
 * Added walking camera mode in world menu (Ctrl + B) (Centryfuga)
@@ -17,7 +19,9 @@ This update is features support for localization of some European languages, bug
 * Added FOV options to player data and BBS' engine options
 * Added **Animation** and **HUD scene** trigger blocks
 * Added form hitbox options
+* Added new texture atlas and default tile set (upon first world creation)
 * Changed list icon in HUD scenes panel to an appropriate icon (The Bendy)
+* Changed buttons, toggles and labels text get shortened with ... if it's too long
 * Fixed title in block model factory panel
 * Fixed crash when using inventory during scene recording (Kirkus)
 * Fixed morph menu in the scenes panel is covered by icon bar (The Bendy and Maysvoch)
@@ -29,8 +33,11 @@ This update is features support for localization of some European languages, bug
 * Fixed dialogue labels don't get correctly when they have new line(s) (Пивовар)
 * Fixed objectives not being created (Kirkus)
 * Fixed actors falling when switching to flight mode
+* Fixed blocks placement isn't prioritized (when other chunks are loaded, they are not being updated first)
+* Fixed plant block model's texture being stretched
 * Fixed form and texture picker panels could've been opened multiple times atop each other (Kirkus)
 * Improved forms by rewriting their properties to be separate objects (which also support tweening/transitioning)
+* Improved baked AO which elimited dark shading from the sides of blocks (thanks to [0fps article](https://0fps.net/2013/07/03/ambient-occlusion-for-minecraft-like-worlds/))
 * Moved REPL panel to world menu
 
 ## BBS 0.1.1
