@@ -4,7 +4,7 @@ This update is features support for localization of some European languages, bug
 
 **IMPORTANT**: new default tile set atlas (`assets:textures/default_atlas.png`) was added, so in the future, the old default atlas texture (`assets:textures/atlas.png`) will be removed! 
 
-* Added font rendering support of letters from: Portuguese, Russian, Ukrainian, French, German, Spanish, Italian, Swedish, Norwegian, Dutch, Danish and Chinese (thanks to [zpix-pixel-font](https://github.com/SolidZORO/zpix-pixel-font))
+* Added font rendering support of letters from: Portuguese, Russian, Ukrainian, French, German, Spanish, Italian, Swedish, Norwegian, Dutch, Danish and Chinese (thanks to [zpix-pixel-font](https://github.com/SolidZORO/zpix-pixel-font) and Chunk7 for introducing it to me)
 * Added Russian (by Kirkus) and Ukrainian (by Kirkus) languages
 * Added font rendering formatting codes wave (§w, stacking increases vertical amplitude), shake (§s, stacking increases distance of shake) and rainbow (§n, stacking changes per letter rainbow colors or per entire text fragment) (Centryfuga)
 * Added language editor in utility panel (F6) that allows to edit current language's strings (it's userful mostly for translators)
