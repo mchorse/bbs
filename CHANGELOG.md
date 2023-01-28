@@ -1,13 +1,13 @@
 ## BBS 0.3
 
-This update features refactored quest chains, multiple UX features and tweaks. **This update contains breaking changes!**
+This update features refactored quest chains, schematic importer (with an editor), new forms, multiple UX features and tweaks. **This update contains breaking changes!**
 
-The list of breaking changes:
+### List of BREAKING changes
 
-* Keyframe paths in animation panel were changed, so some (if not all) keyframes that worked in 0.2 would stop working
-* Trigger world object's hitbox anchor was changed to middle XZ and bottom Y, so any trigger objects would need to be shifted by (0.5, 0, 0.5)
+* Keyframe paths in animation panel were changed, so some (if not all) keyframes that worked in 0.2 would stop working!
+* Trigger world object's hitbox anchor was changed to middle XZ and bottom Y, so any trigger objects would need to be shifted by (0.5, 0, 0.5)!
 
-The list of changes:
+### List of changes
 
 * Added schematic importer (Centryfuga): here is how it works, if you would place a .schematic file into `game/config/structures/`, it would appear in the load structures list with `.schematic` suffix, load it, and it will open an overlay where you can adjust the blocks. Once you're done configuring, close the overlay panel, and the structure would appear. Make sure to save it!
 * Added new forms:
