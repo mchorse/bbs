@@ -30,6 +30,7 @@ The list of changes:
 * Added space + left click to move camera as an alternative to middle mouse button (FreakZillA8)
 * Added hitbox size option to trigger world object
 * Added change tile sets button to world add and edit overlays
+* Added support for multiple quest chains and quest nodes to be attached to the same reaction node
 * Changed logging system: logs will no longer be save near `launcher.jar` but rather in `game/logs/`. `launcher.log` is the latest log, while the logs with date filenames are previous logs.
 * Changed font line word wrapping threshold to 12 symbols
 * Changed quest chains: a separate chain is a list of quests that needed to be completed in order, unnecessary options like allow retake and auto accept were removed
