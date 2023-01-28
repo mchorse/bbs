@@ -1,6 +1,73 @@
+## BBS 0.3
+
+This update features refactored quest chains, multiple UX features and tweaks. **This update contains breaking changes!**
+
+The list of breaking changes:
+
+* Keyframe paths in animation panel were changed, so some (if not all) keyframes that worked in 0.2 would stop working
+* Trigger world object's hitbox anchor was changed to middle XZ and bottom Y, so any trigger objects would need to be shifted by (0.5, 0, 0.5)
+
+The list of changes:
+
+* Added schematic importer (Centryfuga): here is how it works, if you would place a .schematic file into `game/config/structures/`, it would appear in the load structures list with `.schematic` suffix, load it, and it will open an overlay where you can adjust the blocks. Once you're done configuring, close the overlay panel, and the structure would appear. Make sure to save it!
+* Added new forms:
+    * `bbs:block` a form that renders a single block variant
+    * `bbs:structure` a form that renders saved structure (schematic structures have to be saved first)
+* Added basic crash report saving mechanism: if the engine crashes, a window should popup that would offering opening crash logs folder, copy crash log to the copy-paste buffer, and just close
+* Added new global triggers in Game Settings:
+    * `Player: clicked mouse` gets triggered when player presses or releases a mouse button
+    * `UI: open menu` gets triggered when app opens a UI menu (The Bendy)
+    * `UI: open menu` gets triggered when a UI menu gets closed (The Bendy)
+* Added scripting methods:
+    * `IScriptEntity.getForm()` returns a direct reference to entity's form (or `null` if it doesn't have one)
+    * `IScriptWorld.getEntityByUUID(String)` returns an entity found in the world by given UUID
+    * `IScriptWorlds.loadAt(String, double, double, double, float, float)` to spawn player at desired coordinates
+* Added arc tool to the world editor (Centryfuga)
+* Added open blocks panel keybind to world editor (`O` is default key) (Centryfuga)
+* Added basic quest HUD renderer
+* Added basic quest tracker in player's inventory menu
+* Added `launch.bat`/`launch.sh` (depending on the OS) scripts to distribution
+* Added space + left click to move camera as an alternative to middle mouse button (FreakZillA8)
+* Added hitbox size option to trigger world object
+* Added change tile sets button to world add and edit overlays
+* Changed logging system: logs will no longer be save near `launcher.jar` but rather in `game/logs/`. `launcher.log` is the latest log, while the logs with date filenames are previous logs.
+* Changed font line word wrapping threshold to 12 symbols
+* Changed quest chains: a separate chain is a list of quests that needed to be completed in order, unnecessary options like allow retake and auto accept were removed
+* Changed right clicking an entity in REPL world panel pasting `.getEntityByUUID()` snippet instead of direct reference
+* Fixed animated models rendered rotated groups incorrectly (Hrymka)
+* Fixed form body parts are not considered for equality resulting in selecting incorrect form in the form list menu
+* Fixed crash when clicking on non model morphs in animation panel (Kirkus)
+* Fixed exponential interpolations having a rough end (because the range of original formulas were 0.001..1 instead of 0..1)
+* Fixed mouse clicking in REPL panel will insert code bits even when it shouldn't (Kirkus)
+* Fixed a couple of scripting docs documentation issues
+* Fixed a crash when there are extra non .jar files in dependencies (Joziah3)
+* Fixed memory leak with chalkboard upon window resize (Just Jory)
+* Fixed GUI flickering when changing GUI scale by dragging (Just Jory)
+* Fixed picking a form with body parts won't add its body parts to the tree list
+* Fixed edit metadata and convert world overlays wrongly display warnings about empty world ID
+* Fixed non-existent entity/object still being present in the list after it was removed
+* Fixed trigger objects hotkey HUD tooltips are visible during camera playback (Kirkus)
+* Improved animation panel:
+    * Added ability to keyframe color and transform properties
+    * Changed the paths for body parts
+    * Moved keyframe list was moved to an overlay panel
+    * Removed pick/edit keybinds for form picking/editing (to avoid triggering them when vertically navigating by `Q` and `E`)
+* Improved langauge string editor:
+    * Added context menu option to keys to allow mark keys as completed (in case translation isn't needed)
+    * Added feature to add supported langauges without hardcode: create a file `game/assets/lang_editor/languages.json`, and the object's key is the language ID and the value is display label, so adding `{"es_ES": "Español (es_ES)"}` to the file will add Spanish to the list of languages
+* Improved crafting table panel:
+    * Added solid black background and right click animation to the recipe list
+    * Moved title and craft button labels under settings (gear icon)
+* Improved tile set editor:
+    * Added context menu to UV editor to jumpt to currently selected UV region (Joziah3)
+    * Added block tint option (Joziah3)
+    * Added replace block model button to the list overlay (Joziah3)
+    * Added copy/paste block model context menu items to the list overlay
+* Removed camera sync mode, now camera clips are edited by just enabling flight mode
+
 ## BBS 0.2
 
-This update is features support for localization of some European languages, bug fixes, and some nice tweaks. Special thanks goes to Draacoun, Kirkus, Noozy and Rebane!
+This update features support for localization of some European languages, bug fixes, and some nice tweaks. Special thanks goes to Draacoun, Kirkus, Noozy and Rebane!
 
 **IMPORTANT**: new default tile set atlas (`assets:textures/default_atlas.png`) was added, so in the future, the old default atlas texture (`assets:textures/atlas.png`) will be removed! 
 
