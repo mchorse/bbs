@@ -5,7 +5,7 @@ This quick patch update just fixes some bugs.
 * Added remove selection key (Ctrl + D) in world menu
 * Changed feature panel to be taller in the welcome menu
 * Fixed extra languages not loading at launch (Draacoun)
-* Fixed keys marked as completed in langage editor get exported as well
+* Fixed keys marked as completed in language editor get exported as well
 * Fixed completion label in langage editor don't account completed keys
 * Fixed texture picker in tile set editor and form picker in HUD scenes appear in wrong order (The Bendy)
 * Fixed HUD form rotation is being converted to rads twice (Joziah3)
