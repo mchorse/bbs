@@ -2,7 +2,7 @@
 
 This update is mostly focused around removing asset packs from BBS. The reason they were removed is due to their limitations of distributing BBS. If you were to make a game with BBS, with those asset packs present, you would have to purchase licenses to these packs, or otherwise you wouldn't be able to legally distribute your game made with BBS.
 
-This update features new font editor, .vox model loading, Blockbench mesh model loading, first-person options and other nice tweaks.
+This update features new font editor, MagicaVoxel (`.vox`) model loading, Blockbench mesh (update BBS export plugin) model loading, first-person options and other nice tweaks. 
 
 Special thanks to Kirkus for updating language strings!
 
