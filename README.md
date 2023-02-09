@@ -1,5 +1,9 @@
-# BBS game engine
+# BBS
 
-This repository is for BBS game engine's Wiki. It's work in progress.
+> **BBS** is a game engine/sandbox for creating machinimas and singleplayer mini-games/adventure maps. 
+>
+> For more info, check out Wiki's [Home](https://github.com/mchorse/bbs/wiki) page.
 
-The motivation behind this repository is to try boosting development by first writing the Wiki, and building up upon the content of the Wiki.
+This repository contains its [Wiki](https://github.com/mchorse/bbs/wiki). The source code is at the moment is close-sourced, but if you want to see it go open-source feel free to contribute to [my Patreon](https://www.patreon.com/McHorse).
+
+If you'd like to try out BBS (there are available builds, but it's unfinished), join [BBS' discord server](https://discord.gg/N7ZZyNd4UC) (see #engine-install channel for installation instruction).
