@@ -1,3 +1,35 @@
+## BBS 0.4
+
+This update is mostly focused around removing asset packs from BBS. The reason they were removed is due to their limitations of distributing BBS. If you were to make a game with BBS, with those asset packs present, you would have to purchase licenses to these packs, or otherwise you wouldn't be able to legally distribute your game made with BBS.
+
+This update features new font editor, .vox model loading, Blockbench mesh model loading, first-person options and other nice tweaks.
+
+### List of BREAKING changes
+
+* Items made with default iconset `assets:textures/iconset.png` would have no texture due to removal of the iconset asset pack
+
+### List of changes
+
+* Added font editor panel to dashboard, which allows you to edit existing bitmap fonts, or create new ones. Font editor offers following features:
+	* Manage glyphs (characters) and edit their options (size, offset, horizontal width, kerning, whether it's an emoji) and appearance (by drawing on a canvas)
+	* Manage font's formatting codes, which allows to add new colors if needed
+	* Change name and font base height
+* Added label form option to change the BBS font it uses to render the string with
+* Added line drawing from previous point by holding Shift in pixel editor
+* Added new fonts: `BBS (round)`, `BBS (round, mono)`, and `BBS (square)`
+* Added icon button to change items atlas (iconset)
+* Added context menu option to place the UV to the place where cursor is (Centryfuga, Joziah3)
+* Added collisions and eye position preview for morphs (TheBendy)
+* Added vertical wrapping of block models to tile set editor (Centryfuga)
+* Added a keybind to save world in world menu Ctrl + Shift + S (Joziah3)
+* Added first-person form options (form and offset) (TheBendy)
+* Added Blockbench meshes support to BBS model loading
+* Added MagicaVoxel (.vox) model support to BBS model loading
+* Changed 
+* Fixed custom hitbox raytracing messes with the next ray traced position (creating three blocks in a row)
+* Fixed formatting doesn't get correctly applied when splitting into multiple lines (TheBendy)
+* Removed remaining asset packs from BBS: [PixelFonts](https://chevyray.itch.io/pixel-fonts), [zpix](https://github.com/SolidZORO/zpix-pixel-font) and [RPG iconset](https://itch.io/c/1059809/16x16px-iconsets-by-cyangmou)
+
 ## BBS 0.3.1
 
 This quick patch update just fixes some bugs.
@@ -7,9 +39,9 @@ This quick patch update just fixes some bugs.
 * Fixed extra languages not loading at launch (Draacoun)
 * Fixed keys marked as completed in language editor get exported as well
 * Fixed completion label in langage editor don't account completed keys
-* Fixed texture picker in tile set editor and form picker in HUD scenes appear in wrong order (The Bendy)
+* Fixed texture picker in tile set editor and form picker in HUD scenes appear in wrong order (TheBendy)
 * Fixed HUD form rotation is being converted to rads twice (Joziah3)
-* Fixed crash with insert frames... and paste tools in player recording editor (The Bendy)
+* Fixed crash with insert frames... and paste tools in player recording editor (TheBendy)
 * Improved arc tool which now produces a cleaner block path
 
 ## BBS 0.3
@@ -30,8 +62,8 @@ This update features refactored quest chains, schematic importer (with an editor
 * Added basic crash report saving mechanism: if the engine crashes, a window should popup that would offering opening crash logs folder, copy crash log to the copy-paste buffer, and just close
 * Added new global triggers in Game Settings:
     * `Player: clicked mouse` gets triggered when player presses or releases a mouse button
-    * `UI: open menu` gets triggered when app opens a UI menu (The Bendy)
-    * `UI: open menu` gets triggered when a UI menu gets closed (The Bendy)
+    * `UI: open menu` gets triggered when app opens a UI menu (TheBendy)
+    * `UI: open menu` gets triggered when a UI menu gets closed (TheBendy)
 * Added scripting methods:
     * `IScriptEntity.getForm()` returns a direct reference to entity's form (or `null` if it doesn't have one)
     * `IScriptWorld.getEntityByUUID(String)` returns an entity found in the world by given UUID
@@ -102,11 +134,11 @@ This update features support for localization of some European languages, bug fi
 * Added **Animation** and **HUD scene** trigger blocks
 * Added form hitbox options
 * Added new texture atlas and default tile set (upon first world creation)
-* Changed list icon in HUD scenes panel to an appropriate icon (The Bendy)
+* Changed list icon in HUD scenes panel to an appropriate icon (TheBendy)
 * Changed buttons, toggles and labels text get shortened with ... if it's too long
 * Fixed title in block model factory panel
 * Fixed crash when using inventory during scene recording (Kirkus)
-* Fixed morph menu in the scenes panel is covered by icon bar (The Bendy and Maysvoch)
+* Fixed morph menu in the scenes panel is covered by icon bar (TheBendy and Maysvoch)
 * Fixed JSON parser not treating correctly backslashes at the end of the string
 * Fixed crashing when a model is empty or has incorrect data format
 * Fixed trigger objects could be accessed from anywhere
