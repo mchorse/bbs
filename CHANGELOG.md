@@ -4,6 +4,8 @@ This update is mostly focused around removing asset packs from BBS. The reason t
 
 This update features new font editor, .vox model loading, Blockbench mesh model loading, first-person options and other nice tweaks.
 
+Special thanks to Kirkus for updating language strings!
+
 ### List of BREAKING changes
 
 * Items made with default iconset `assets:textures/iconset.png` would have no texture due to removal of the iconset asset pack
@@ -11,9 +13,9 @@ This update features new font editor, .vox model loading, Blockbench mesh model 
 ### List of changes
 
 * Added font editor panel to dashboard, which allows you to edit existing bitmap fonts, or create new ones. Font editor offers following features:
-	* Manage glyphs (characters) and edit their options (size, offset, horizontal width, kerning, whether it's an emoji) and appearance (by drawing on a canvas)
-	* Manage font's formatting codes, which allows to add new colors if needed
-	* Change name and font base height
+    * Manage glyphs (characters) and edit their options (size, offset, horizontal width, kerning, whether it's an emoji) and appearance (by drawing on a canvas)
+    * Manage font's formatting codes, which allows to add new colors if needed
+    * Change name and font base height
 * Added label form option to change the BBS font it uses to render the string with
 * Added line drawing from previous point by holding Shift in pixel editor
 * Added new fonts: `BBS (round)`, `BBS (round, mono)`, and `BBS (square)`
@@ -25,7 +27,7 @@ This update features new font editor, .vox model loading, Blockbench mesh model 
 * Added first-person form options (form and offset) (TheBendy)
 * Added Blockbench meshes support to BBS model loading
 * Added MagicaVoxel (.vox) model support to BBS model loading
-* Changed 
+* Changed orbit camera flight to be handled by delegated key events instead of during render
 * Fixed custom hitbox raytracing messes with the next ray traced position (creating three blocks in a row)
 * Fixed formatting doesn't get correctly applied when splitting into multiple lines (TheBendy)
 * Removed remaining asset packs from BBS: [PixelFonts](https://chevyray.itch.io/pixel-fonts), [zpix](https://github.com/SolidZORO/zpix-pixel-font) and [RPG iconset](https://itch.io/c/1059809/16x16px-iconsets-by-cyangmou)
