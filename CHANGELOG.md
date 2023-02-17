@@ -1,3 +1,23 @@
+## BBS 0.5
+
+This update features improvements to items, adds a couple of skybox options, camera world object and macOS fixes.
+
+* Added camera world object, which allows rendering scene to a texture (which can be displayed with billboard form)
+* Added skybox options to world menu's world settings panel
+* Added `bbs:item` form, which allows displaying items (and entity's items from an equipment slot)
+* Added Use target option to body parts which passes the original entity from parent form
+* Added item options to the items editor:
+   * Form, allows to substitute an item rendering from items atlas with a custom form
+   * Extruded, allows to render item as a voxelized (extruded) model instead of as a plain billboard (quad facing toward camera)
+* Added Move to cursor (Ctrl + G) keybind in entity and world object editors panels to move entity/world object to place where cursor hovers
+* Added Toggle axes (Ctrl + T) keybind to world menu that allows to toggle visibility of +X+Y+Z-X-Y-Z orbit pivot/axes preview
+* Fixed crash with in-game scripting documentation (TheBendy)
+* Fixed camera keeps going when switching to another menu (TheBendy)
+* Fixed multiple macOS related issues:
+   * Fixed mouse pointer incorrectly calculate mouse coordinates
+   * Fixed screenshot and texture saving hanging
+   * Fixed open URL buttons
+
 ## BBS 0.4
 
 This update is mostly focused around removing asset packs from BBS. The reason they were removed is due to their limitations of distributing BBS. If you were to make a game with BBS, with those asset packs present, you would have to purchase licenses to these packs, or otherwise you wouldn't be able to legally distribute your game made with BBS.
