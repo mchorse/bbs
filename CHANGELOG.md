@@ -7,8 +7,10 @@ This update features improvements to items, adds a couple of skybox options, cam
 * Added `bbs:item` form, which allows displaying items (and entity's items from an equipment slot)
 * Added Use target option to body parts which passes the original entity from parent form
 * Added item options to the items editor:
-   * Form, allows to substitute an item rendering from items atlas with a custom form
-   * Extruded, allows to render item as a voxelized (extruded) model instead of as a plain billboard (quad facing toward camera)
+   * Form, allows you to substitute an item rendering from items atlas with a custom form
+   * Extruded, allows you to change item rendering as a voxelized (extruded) model instead of as a plain billboard (quad that always faces the camera)
+   * Frame color, allows you to specify color for new item tooltips (TorayLife)
+   * Description, allows you to add description/lore of the item (TorayLife)
 * Added Move to cursor (Ctrl + G) keybind in entity and world object editors panels to move entity/world object to place where cursor hovers
 * Added Toggle axes (Ctrl + T) keybind to world menu that allows to toggle visibility of +X+Y+Z-X-Y-Z orbit pivot/axes preview
 * Fixed crash with in-game scripting documentation (TheBendy)
@@ -17,6 +19,7 @@ This update features improvements to items, adds a couple of skybox options, cam
    * Fixed mouse pointer incorrectly calculate mouse coordinates
    * Fixed screenshot and texture saving hanging
    * Fixed open URL buttons
+* Improved item tooltips (TorayLife)
 
 ## BBS 0.4
 
