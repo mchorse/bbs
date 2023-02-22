@@ -1,6 +1,30 @@
+## BBS 0.5.1
+
+This patch update adds UI keybinds configuration section, which allows to change keybinds within BBS' UIs, and improves some UI features. I also accidentally overwrote Ukrainian language strings with Russian strings, so I had to release this update prematurely. I appologize for any inconvenience! 🤦‍♂️
+
+Special thanks to Kirkus for updating language strings!
+
+* Added HSV picker option (which is enabled by default) which changes color picker to use HSV (Hue, Saturation, Value) instead of RGB (Red, Green, Blue)
+* Added configuration category to remap UI keybinds within BBS' menus
+* Added ⇧, ⊞, ⌘ and ⌥ symbols to BBS (Round) and BBS (Square) fonts
+* Changed `Tab` key for textarea (bigger text field that supports wordwrapping and multiple lines) to focus next/previous element instead of inserting 4 spaces
+* Changed display text of modifier keys from Ctrl, Shift, Alt, Cmd/Win, to ^, ⇧, ⌥, ⌘/⊞ respectively
+* Changed Z axis's color in transformation and vector elements toward light-blue (Chryfi) 
+* Fixed user added languages are getting reset before launching (Draacoun)
+* Fixed items (within item forms) not appearing in player menu
+* Improved jump to next/previous focusable element with `Tab` key by: 
+    * Limiting scope of focusable elements to first parent container
+    * Scrolling to focused element if next/previous focusable element is in a scrolling view
+* Improved a lot of GUI code (internal changes)
+* Moved `camera.gui.` language keys to `bbs.ui.camera.`
+* Moved flight keybinds to UI keybinds
+* Removed F1 key in play mode
+
 ## BBS 0.5
 
 This update features improvements to items, adds a couple of skybox options, camera world object and macOS fixes.
+
+Special thanks to Kirkus for updating language strings!
 
 * Added camera world object, which allows rendering scene to a texture (which can be displayed with billboard form)
 * Added skybox options to world menu's world settings panel
