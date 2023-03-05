@@ -26,7 +26,7 @@ Following UI components (with corresponding IDs) must be present for the custom 
 * ID `slots`, type Layout (`bbs:layout`) with Layout type any but not `None`, it will display player's equipment slots (of which there are currently 2).
 * ID `inventory`, type Layout (`bbs:layout`) with Layout type `None` and preferably `100` width and `160` height, it will display player's inventory, which is hardcoded to have 5 items per row and in total 40 slots.
 
-All of these elements can be attached to root, or nested into other UI components. 
+All of these elements can be attached to root, or nested into other UI components. You can download [this example](https://github.com/mchorse/bbs/blob/master/uis/inventory.json) and move it to `game/data/uis/`.
 
 ### Dialogue UI requirements
 
@@ -40,7 +40,7 @@ Following UI components (with corresponding IDs) must be present for the custom 
 * ID `back`, type Button (`bbs:button`), it will be displayed when quests or crafting table is displayed.
 * ID `accept`, type Button (`bbs:button`), it will be displayed when quests are present, which allows accepting/completing a selected quest.
 
-All of these elements can be attached to root, or nested into other UI components. 
+All of these elements can be attached to root, or nested into other UI components. You can download [this example](https://github.com/mchorse/bbs/blob/master/uis/dialogue.json) and move it to `game/data/uis/`.
 
 ## BBS 0.5.1
 
