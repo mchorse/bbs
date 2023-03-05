@@ -1,6 +1,6 @@
 ## BBS 0.6
 
-This update brings new UI editor, which allows creating custom UI menus, which was only possible through scripts before, with a GUI editor. Beside UI editor, `0.6` allows to customize pause, inventory, and dialogue menus with the new UI editor. Beside that, world and dashboard menus were merged.
+This update brings new UI editor, which allows creating custom UI menus, which was only possible through scripts before, with a GUI editor. Beside UI editor, `0.6` allows to customize pause, inventory, and dialogue menus with the new UI editor, world and dashboard menus were merged, and game controllers were introduced.
 
 * Added shading direction option to world settings
 * Added holding `Space` to vector fields (3 trackpad/number fields marked red, green and blue) to change all fields at once
@@ -8,6 +8,10 @@ This update brings new UI editor, which allows creating custom UI menus, which w
 * Added UI editor, which allows creating custom menus using simple UI components (buttons, icons, graphics, textbox, text, labels, etc.), which are also scriptable
 * Added User interface (`bbs:ui`) trigger block which allows opening custom UI menus and also close any UI menu
 * Added `IScriptUI.createFromData(String)` (and its overrides) and `IScriptUIBuilder.get(String)`
+* Added game controllers feature, which allow you to change the gameplay in the play mode:
+    * First-/third-person controller, allows the player to go around from 1st-person or 3rd-person POVs
+    * Top down controller, allows the player to control WASD cardinally without mouse with a camera looking down
+    * Side scroller controller, allows the player to control horizontally (on X axis)
 * Added game settings options:
     * Pause UI, it allows you to pick a custom UI that will replace pause menu
     * Inventory UI, it allows you to pick a UI that will serve as a template for inventory menu (see **Inventory UI** requirements below) (Kirkus)
