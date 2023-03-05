@@ -1,0 +1,444 @@
+{
+    closeable: 1b,
+    background: 1b,
+    root: {
+        margin: [0, 0, 0, 0],
+        components: [
+            {
+                margin: [0, 0, 0, 0],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 200,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                graphics: [
+                    {
+                        rW: 1.0f,
+                        rX: 0.0f,
+                        rY: 0.0f,
+                        h: 0,
+                        type: "bbs:rect",
+                        anchorY: 0.0f,
+                        hover: 0b,
+                        rH: 1.0f,
+                        anchorX: 0.0f,
+                        w: 0,
+                        x: 0,
+                        y: 0,
+                        primary: -16777216
+                    }
+                ],
+                type: "bbs:graphics",
+                enabled: 1b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 200,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.5f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.5f,
+                    value: 0.5f,
+                    target: ""
+                },
+                id: ""
+            },
+            {
+                margin: [0, 0, 0, 0],
+                visible: 1b,
+                distance: 2.5f,
+                rotation: [0.0f, 0.0f, 0.0f],
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 200,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                fov: 50.0f,
+                type: "bbs:form",
+                enabled: 1b,
+                editing: 0b,
+                updateDelay: 200,
+                keybinds: [],
+                form: {
+                    transform: {
+                        r: [0.0f, 0.0f, 0.0f],
+                        s: [1.0f, 1.0f, 1.0f],
+                        t: [0.0f, 0.0f, 0.0f]
+                    },
+                    hitboxHeight: 1.8f,
+                    hitboxEyeHeight: 0.9f,
+                    pose: {
+                        static: 0b
+                    },
+                    hitboxSneakMultiplier: 0.9f,
+                    name: "",
+                    model: "dinner",
+                    id: "bbs:model",
+                    bodyParts: {},
+                    hitbox: 0b,
+                    actions: {},
+                    hitboxWidth: 0.5f
+                },
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 200,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.5f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.5f,
+                    value: 0.5f,
+                    target: ""
+                },
+                id: "form",
+                position: [0.0f, 1.0f, 0.0f]
+            },
+            {
+                padding: 0,
+                margin: 0,
+                components: [
+                    {
+                        margin: [0, 0, 0, 0],
+                        visible: 1b,
+                        tooltip: {
+                            label: "",
+                            direction: 0
+                        },
+                        h: {
+                            targetAnchor: 0.0f,
+                            offset: 8,
+                            max: 0,
+                            anchor: 0.0f,
+                            value: 0.0f,
+                            target: ""
+                        },
+                        label: "Quests",
+                        type: "bbs:label",
+                        enabled: 1b,
+                        anchorY: 0.0f,
+                        updateDelay: 0,
+                        keybinds: [],
+                        anchorX: 0.0f,
+                        w: {
+                            targetAnchor: 0.0f,
+                            offset: 0,
+                            max: 0,
+                            anchor: 0.0f,
+                            value: 1.0f,
+                            target: ""
+                        },
+                        x: {
+                            targetAnchor: 0.0f,
+                            offset: 0,
+                            max: 0,
+                            anchor: 0.0f,
+                            value: 0.0f,
+                            target: ""
+                        },
+                        context: [],
+                        hasBackground: 1b,
+                        y: {
+                            targetAnchor: 0.0f,
+                            offset: -12,
+                            max: 0,
+                            anchor: 0.0f,
+                            value: 0.0f,
+                            target: ""
+                        },
+                        id: "",
+                        textShadow: 1b
+                    }
+                ],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 200,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                scroll: 0b,
+                type: "bbs:layout",
+                enabled: 1b,
+                horizontal: 0b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 140,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: -105,
+                    max: 0,
+                    anchor: 1.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: -100,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                layoutType: 0,
+                id: "quest"
+            },
+            {
+                padding: 0,
+                margin: 0,
+                components: [],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 20,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                scroll: 0b,
+                type: "bbs:layout",
+                enabled: 1b,
+                horizontal: 0b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 40,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: -100,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 105,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                layoutType: 2,
+                id: "slots"
+            },
+            {
+                padding: 0,
+                margin: 0,
+                components: [
+                    {
+                        margin: [0, 0, 0, 0],
+                        visible: 1b,
+                        tooltip: {
+                            label: "",
+                            direction: 0
+                        },
+                        h: {
+                            targetAnchor: 0.0f,
+                            offset: 8,
+                            max: 0,
+                            anchor: 0.0f,
+                            value: 0.0f,
+                            target: ""
+                        },
+                        label: "Inventory",
+                        type: "bbs:label",
+                        enabled: 1b,
+                        anchorY: 0.0f,
+                        updateDelay: 0,
+                        keybinds: [],
+                        anchorX: 0.0f,
+                        w: {
+                            targetAnchor: 0.0f,
+                            offset: 0,
+                            max: 0,
+                            anchor: 0.0f,
+                            value: 1.0f,
+                            target: ""
+                        },
+                        x: {
+                            targetAnchor: 0.0f,
+                            offset: 0,
+                            max: 0,
+                            anchor: 0.0f,
+                            value: 0.0f,
+                            target: ""
+                        },
+                        context: [],
+                        hasBackground: 1b,
+                        y: {
+                            targetAnchor: 0.0f,
+                            offset: -12,
+                            max: 0,
+                            anchor: 0.0f,
+                            value: 0.0f,
+                            target: ""
+                        },
+                        id: "",
+                        textShadow: 1b
+                    }
+                ],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 160,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                scroll: 0b,
+                type: "bbs:layout",
+                enabled: 1b,
+                horizontal: 0b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 100,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 105,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: -100,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                layoutType: 0,
+                id: "inventory"
+            }
+        ],
+        visible: 1b,
+        tooltip: {
+            label: "",
+            direction: 0
+        },
+        h: {
+            targetAnchor: 0.0f,
+            offset: 0,
+            max: 0,
+            anchor: 0.0f,
+            value: 0.0f,
+            target: ""
+        },
+        enabled: 1b,
+        updateDelay: 0,
+        keybinds: [],
+        w: {
+            targetAnchor: 0.0f,
+            offset: 0,
+            max: 0,
+            anchor: 0.0f,
+            value: 0.0f,
+            target: ""
+        },
+        x: {
+            targetAnchor: 0.0f,
+            offset: 0,
+            max: 0,
+            anchor: 0.0f,
+            value: 0.0f,
+            target: ""
+        },
+        context: [],
+        y: {
+            targetAnchor: 0.0f,
+            offset: 0,
+            max: 0,
+            anchor: 0.0f,
+            value: 0.0f,
+            target: ""
+        },
+        id: ""
+    },
+    function: "",
+    script: ""
+}

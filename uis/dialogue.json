@@ -1,0 +1,506 @@
+{
+    closeable: 1b,
+    background: 1b,
+    root: {
+        margin: [0, 0, 0, 0],
+        components: [
+            {
+                margin: [0, 0, 0, 0],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 20,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                label: "Back",
+                type: "bbs:button",
+                enabled: 1b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 80,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 10,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                context: [],
+                hasBackground: 1b,
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: -30,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 1.0f,
+                    target: ""
+                },
+                id: "back",
+                textShadow: 1b
+            },
+            {
+                margin: [0, 0, 0, 0],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 20,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                label: "Accept",
+                type: "bbs:button",
+                enabled: 1b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 80,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: -10,
+                    max: 0,
+                    anchor: 1.0f,
+                    value: 1.0f,
+                    target: ""
+                },
+                context: [],
+                hasBackground: 1b,
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: -30,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 1.0f,
+                    target: ""
+                },
+                id: "accept",
+                textShadow: 1b
+            },
+            {
+                padding: 0,
+                margin: 0,
+                components: [],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                scroll: 0b,
+                type: "bbs:layout",
+                enabled: 1b,
+                horizontal: 0b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.5f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                layoutType: 0,
+                id: "quest"
+            },
+            {
+                padding: 0,
+                margin: 0,
+                components: [],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                scroll: 0b,
+                type: "bbs:layout",
+                enabled: 1b,
+                horizontal: 0b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.5f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                layoutType: 0,
+                id: "crafting"
+            },
+            {
+                padding: 10,
+                margin: 10,
+                components: [],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                scroll: 1b,
+                type: "bbs:layout",
+                enabled: 1b,
+                horizontal: 0b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.5f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                layoutType: 1,
+                id: "replies"
+            },
+            {
+                padding: 0,
+                margin: 0,
+                components: [],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: -10,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                scroll: 0b,
+                type: "bbs:layout",
+                enabled: 1b,
+                horizontal: 0b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.5f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.5f,
+                    value: 0.5f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 10,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                layoutType: 0,
+                id: "reaction"
+            },
+            {
+                margin: [0, 0, 0, 0],
+                visible: 1b,
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 104,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                graphics: [
+                    {
+                        rW: 1.0f,
+                        rX: 0.0f,
+                        rY: 0.0f,
+                        h: 0,
+                        type: "bbs:rect",
+                        anchorY: 0.0f,
+                        hover: 0b,
+                        rH: 1.0f,
+                        anchorX: 0.0f,
+                        w: 0,
+                        x: 0,
+                        y: 0,
+                        primary: -16777216
+                    },
+                    {
+                        rW: 1.0f,
+                        rX: 0.0f,
+                        rY: 0.0f,
+                        h: -4,
+                        type: "bbs:gradient",
+                        secondary: -16777216,
+                        anchorY: 0.0f,
+                        hover: 0b,
+                        horizontal: 0b,
+                        rH: 1.0f,
+                        anchorX: 0.0f,
+                        w: -4,
+                        x: 2,
+                        y: 2,
+                        primary: -1
+                    }
+                ],
+                type: "bbs:graphics",
+                enabled: 1b,
+                updateDelay: 0,
+                keybinds: [],
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 104,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 0,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                id: ""
+            },
+            {
+                margin: [0, 0, 0, 0],
+                visible: 1b,
+                distance: 1.0f,
+                rotation: [0.0f, 25.5f, 0.0f],
+                tooltip: {
+                    label: "",
+                    direction: 0
+                },
+                h: {
+                    targetAnchor: 0.0f,
+                    offset: 100,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                fov: 40.0f,
+                type: "bbs:form",
+                enabled: 1b,
+                editing: 0b,
+                updateDelay: 200,
+                keybinds: [],
+                form: {
+                    transform: {
+                        r: [0.0f, 0.0f, 0.0f],
+                        s: [1.0f, 1.0f, 1.0f],
+                        t: [0.0f, 0.0f, 0.0f]
+                    },
+                    hitboxHeight: 1.8f,
+                    hitboxEyeHeight: 0.9f,
+                    pose: {
+                        static: 0b
+                    },
+                    hitboxSneakMultiplier: 0.9f,
+                    name: "",
+                    model: "dinner",
+                    id: "bbs:model",
+                    bodyParts: {},
+                    hitbox: 0b,
+                    actions: {},
+                    hitboxWidth: 0.5f
+                },
+                w: {
+                    targetAnchor: 0.0f,
+                    offset: 100,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                x: {
+                    targetAnchor: 0.0f,
+                    offset: 2,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                context: [],
+                y: {
+                    targetAnchor: 0.0f,
+                    offset: 2,
+                    max: 0,
+                    anchor: 0.0f,
+                    value: 0.0f,
+                    target: ""
+                },
+                id: "form",
+                position: [-0.2f, 1.0f, 0.5f]
+            }
+        ],
+        visible: 1b,
+        tooltip: {
+            label: "",
+            direction: 0
+        },
+        h: {
+            targetAnchor: 0.0f,
+            offset: 0,
+            max: 0,
+            anchor: 0.0f,
+            value: 0.0f,
+            target: ""
+        },
+        enabled: 1b,
+        updateDelay: 0,
+        keybinds: [],
+        w: {
+            targetAnchor: 0.0f,
+            offset: 0,
+            max: 0,
+            anchor: 0.0f,
+            value: 0.0f,
+            target: ""
+        },
+        x: {
+            targetAnchor: 0.0f,
+            offset: 0,
+            max: 0,
+            anchor: 0.0f,
+            value: 0.0f,
+            target: ""
+        },
+        context: [],
+        y: {
+            targetAnchor: 0.0f,
+            offset: 0,
+            max: 0,
+            anchor: 0.0f,
+            value: 0.0f,
+            target: ""
+        },
+        id: ""
+    },
+    function: "",
+    script: ""
+}
