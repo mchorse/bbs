@@ -1,3 +1,47 @@
+## BBS 0.6
+
+This update brings new UI editor, which allows creating custom UI menus, which was only possible through scripts before, with a GUI editor. Beside UI editor, `0.6` allows to customize pause, inventory, and dialogue menus with the new UI editor. Beside that, world and dashboard menus were merged.
+
+* Added shading direction option to world settings
+* Added holding `Space` to vector fields (3 trackpad/number fields marked red, green and blue) to change all fields at once
+* Added a feature when pressing `Escape` when dashboard is hidden, it will show the dashboard first before exiting the dashboard
+* Added UI editor, which allows creating custom menus using simple UI components (buttons, icons, graphics, textbox, text, labels, etc.), which are also scriptable
+* Added User interface (`bbs:ui`) trigger block which allows opening custom UI menus and also close any UI menu
+* Added `IScriptUI.createFromData(String)` (and its overrides) and `IScriptUIBuilder.get(String)`
+* Added game settings options:
+    * Pause UI, it allows you to pick a custom UI that will replace pause menu
+    * Inventory UI, it allows you to pick a UI that will serve as a template for inventory menu (see **Inventory UI** requirements below) (Kirkus)
+    * Dialogue UI, it allows you to pick a UI that will serve as a template for dialogue menu (see **Dialogue UI** requirements below) (Centryfuga)
+* Changed mouse and keystrokes rendering
+* Changed world manager to be an overlay panel
+* Fixed `,` is used in certain locales instead of `.` for trackpad (Centryfuga)
+* Merged world menu together with dashboard, so now there is only one creative panel
+
+### Inventory UI requirements
+
+Following UI components (with corresponding IDs) must be present for the custom inventory to work:
+
+* ID `form`, type Form (`bbs:form`), it will display player's form.
+* ID `quest`, type Layout (`bbs:layout`) with Layout type `None`, it will display quests, if the player has any.
+* ID `slots`, type Layout (`bbs:layout`) with Layout type any but not `None`, it will display player's equipment slots (of which there are currently 2).
+* ID `inventory`, type Layout (`bbs:layout`) with Layout type `None` and preferably `100` width and `160` height, it will display player's inventory, which is hardcoded to have 5 items per row and in total 40 slots.
+
+All of these elements can be attached to root, or nested into other UI components. 
+
+### Dialogue UI requirements
+
+Following UI components (with corresponding IDs) must be present for the custom inventory to work:
+
+* ID `form`, type Form (`bbs:form`), it will display current dialogue reaction's form.
+* ID `quest`, type Layout (`bbs:layout`) with Layout type `None`, it will display current dialogue's quests, if any are present.
+* ID `crafting`, type Layout (`bbs:layout`) with Layout type `None`, it will display current dialogue's crafting table, if one is present.
+* ID `replies`, type Layout (`bbs:layout`) with Layout type `Column`, it will display current dialogue's replies (reply nodes connected to current reaction node).
+* ID `reaction`, type Layout (`bbs:layout`) with Layout type `None`, it will display current dialogue reaction node's text.
+* ID `back`, type Button (`bbs:button`), it will be displayed when quests or crafting table is displayed.
+* ID `accept`, type Button (`bbs:button`), it will be displayed when quests are present, which allows accepting/completing a selected quest.
+
+All of these elements can be attached to root, or nested into other UI components. 
+
 ## BBS 0.5.1
 
 This patch update adds UI keybinds configuration section, which allows to change keybinds within BBS' UIs, and improves some UI features. I also accidentally overwrote Ukrainian language strings with Russian strings, so I had to release this update prematurely. I appologize for any inconvenience! 🤦‍♂️
