@@ -1,3 +1,24 @@
+## BBS 0.6.1
+
+This patch update provides only minor fixes. It also features new section in welcome menu with list of Patreon subscribers. If you'd like to see your name there too, feel free to pledge on [Patreon](https://www.patreon.com/McHorse) ($10 tier).
+
+* Added scripting features:
+   * Added `bbs.isDevelopment()` checks whether BBS was launched in development or play mode
+   * Added `ModelForm.playAnimation(String)` for `bbs:model` forms allows to play a Blockbench animation once
+   * Added `IScriptEntity.getFirstPersonForm()` and `IScript.setFirstPersonForm(Form)` to manipulate entity's (player's) first-person form
+   * Added `Form.tween(Form, int, String)`, where `int` is duration (in ticks), and `String` is interpolation's key (which can be looked up [here](https://github.com/mchorse/mclib/blob/1.12/src/main/java/mchorse/mclib/utils/Interpolation.java#L8))
+* Added Patreon section to Welcome menu
+* Changed lower limit for chunk size from `16` to `2`
+* Changed icon graphic to always render in the middle of the graphic's area
+* Changed trigger object location in side scroller game controller (by proximity, 2 blocks radius) instead of directly looking at it
+* Fixed copy language strings JSON crashing (Draacoun)
+* Fixed textbox's selection method with Shift + click
+* Fixed context menu wouldn't appear in script editor
+* Fixed lists element could be dragged with right or middle mouse buttons
+* Fixed URL opening not working on Windows
+* Improved key cap sprite for key strokes
+* Improved utility panel's window resizing feature
+
 ## BBS 0.6
 
 This update brings new UI editor, which allows creating custom UI menus, which was only possible through scripts before, with a GUI editor. Beside UI editor, `0.6` allows to customize pause, inventory, and dialogue menus with the new UI editor, world and dashboard menus were merged, and game controllers were introduced.
