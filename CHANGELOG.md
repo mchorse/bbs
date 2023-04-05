@@ -1,3 +1,35 @@
+## BBS 0.7
+
+This update is all over the place. The biggest feature in this update, in my opinion is basic voxel lighting. It's still buggy and unfinished (because there is no sky light, only torch light). Other cool features are joystick model control, world settings presets, and world editor's masks and improvements to spray and smooth brushes.
+
+* Added `IScriptPlayer.canControl()` and `IScriptPlayer.setControl(boolean)`, which allows you to lock and unlock player controls via scripts
+* Added color filter option to **Model** (`bbs:model`) form
+* Added voxel block light propagation (aka torch light)
+* Added joystick variables to Blockbench models (`joystick.l_x`, `joystick.l_y`, `joystick.r_x`, `joystick.r_y`, `joystick.l_trigger`, `joystick.r_trigger`)
+* Added world settings presets
+* Added lightmap option to world settings
+* Added support to load multiple `.bbs.json` files in the folder (it doesn't merge models, but if there is one model, and multiple files with just animations, it would compile those animations to the model)
+* Added `config.json` file to Blockbench models folder (which allows you to specify from which file animations can be loaded from)
+* Added mask to world editor (which allows you to pick which blocks are affected by tool and brushes during editing)
+* Added snap sound when taking screenshot (TheGreatFelix)
+* Added beep sound when starting/stopping video recording
+* Added scene tick offset option to **Scene** (`bbs:scene`) clip
+* Added back audio preview
+* Added play modes to **Sound** (`bbs:sound`) trigger block
+* Added chunks to world settings (which allows to change "render distance" in the world)
+* Added force all chunk loading during video recording
+* Added vertical and horizontal flip of currently copied structure to world editor
+* Changed spray brush's chance range from `0..1` (normalized percentage) to `0..100` (percentage)
+* Changed maximum memory limit for uploading models to GPU from `4mb` to `8mb`
+* Improved smooth brush by changing the algorithm to height map blurring
+* Fixed flood fill tool's flood fill algorithm
+* Fixed crash when removing last particle effect (Centryfuga)
+* Fixed crash with RGB textures (xxxSgyshenka)
+* Fixed rotation and flipping of non opaque blocks (Centryfuga)
+* Fixed `jump` animation not working during scene playback
+* Removed world time trigger block
+* Removed replace mode in world editor (because it's basically replaced by masks)
+
 ## BBS 0.6.1
 
 This patch update provides only minor fixes. It also features new section in welcome menu with list of Patreon subscribers. If you'd like to see your name there too, feel free to pledge on [Patreon](https://www.patreon.com/McHorse) ($10 tier).
