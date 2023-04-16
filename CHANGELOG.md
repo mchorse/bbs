@@ -5,9 +5,9 @@ This update is all over the place. The biggest feature in this update, in my opi
 * Added `IScriptPlayer.canControl()` and `IScriptPlayer.setControl(boolean)`, which allows you to lock and unlock player controls via scripts
 * Added color filter option to **Model** (`bbs:model`) form
 * Added voxel block light propagation (aka torch light)
-* Added joystick support
-    * Added variables to Blockbench models (`joystick.l_x`, `joystick.l_y`, `joystick.r_x`, `joystick.r_y`, `joystick.l_trigger`, `joystick.r_trigger`)
-    * Added actions `joystick_up`, `joystick_left`, `joystick_down` and `joystick_right`, which get triggered when joystick's Dpad buttons are pressed
+* Added joystick support:
+    * Added variables `joystick.l_x`, `joystick.l_y`, `joystick.r_x`, `joystick.r_y`, `joystick.l_trigger`, `joystick.r_trigger` to Blockbench models
+    * Added actions `joystick_up`, `joystick_left`, `joystick_down` and `joystick_right` to Blockbench models, which get triggered when joystick's Dpad buttons are pressed
     * Added character control to third person game controller (left bumper toggles control, right bumper changes between front and back views, A is for jumping)
 * Added world settings presets
 * Added lightmap option to world settings
