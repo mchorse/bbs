@@ -5,7 +5,10 @@ This update is all over the place. The biggest feature in this update, in my opi
 * Added `IScriptPlayer.canControl()` and `IScriptPlayer.setControl(boolean)`, which allows you to lock and unlock player controls via scripts
 * Added color filter option to **Model** (`bbs:model`) form
 * Added voxel block light propagation (aka torch light)
-* Added joystick variables to Blockbench models (`joystick.l_x`, `joystick.l_y`, `joystick.r_x`, `joystick.r_y`, `joystick.l_trigger`, `joystick.r_trigger`)
+* Added joystick support
+    * Added variables to Blockbench models (`joystick.l_x`, `joystick.l_y`, `joystick.r_x`, `joystick.r_y`, `joystick.l_trigger`, `joystick.r_trigger`)
+    * Added actions `joystick_up`, `joystick_left`, `joystick_down` and `joystick_right`, which get triggered when joystick's Dpad buttons are pressed
+    * Added character control to third person game controller (left bumper toggles control, right bumper changes between front and back views, A is for jumping)
 * Added world settings presets
 * Added lightmap option to world settings
 * Added support to load multiple `.bbs.json` files in the folder (it doesn't merge models, but if there is one model, and multiple files with just animations, it would compile those animations to the model)
@@ -19,6 +22,11 @@ This update is all over the place. The biggest feature in this update, in my opi
 * Added chunks to world settings (which allows to change "render distance" in the world)
 * Added force all chunk loading during video recording
 * Added vertical and horizontal flip of currently copied structure to world editor
+* Added a mechanism to load custom mipmaps for blocks atlas (`%NAME_OF_ATLAS%_mipmap_1.png` and `%NAME_OF_ATLAS%_mipmap_2.png`)
+* Added reload terrain button to utility panel
+* Added ability to record separate groups (for example, just the position, or just the rotation) in scene panel
+* Added keybind to open World editor in the dashboard (Ctrl + Shift + B)
+* Added saving camera's position and rotation upon exiting the world (Aloan)
 * Changed spray brush's chance range from `0..1` (normalized percentage) to `0..100` (percentage)
 * Changed maximum memory limit for uploading models to GPU from `4mb` to `8mb`
 * Improved smooth brush by changing the algorithm to height map blurring
@@ -27,6 +35,15 @@ This update is all over the place. The biggest feature in this update, in my opi
 * Fixed crash with RGB textures (xxxSgyshenka)
 * Fixed rotation and flipping of non opaque blocks (Centryfuga)
 * Fixed `jump` animation not working during scene playback
+* Fixed camera panel keybinds getting triggered during flight mode
+* Fixed sound list overlay not getting updated
+* Fixed scene is being stopped before finishing recording
+* Fixed path clip's interpolation can't be changed
+* Fixed pasting body parts was not possible on the root form
+* Fixed a couple of annoying UX problems in animation editor: mouse scrolling in quick are results in camera zooming in/out, previous tick keybind not working, and when navigating in keyframe editor camera would move as well
+* Fixed save button not changing when toggling collision and collision box options (Aloan)
+* Fixed pasting entities didn't work (Aloan)
+* Improved player recording code and removed unnecessary feature that were present in Blockbuster (teleport back)
 * Removed world time trigger block
 * Removed replace mode in world editor (because it's basically replaced by masks)
 
