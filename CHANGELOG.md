@@ -12,7 +12,10 @@ This update is all over the place. The biggest feature in this update, in my opi
 * Added world settings presets
 * Added lightmap option to world settings
 * Added support to load multiple `.bbs.json` files in the folder (it doesn't merge models, but if there is one model, and multiple files with just animations, it would compile those animations to the model)
-* Added `config.json` file to Blockbench models folder (which allows you to specify from which file animations can be loaded from)
+* Added `config.json` file to Blockbench models folder that supports following properties:
+    * `animations` (list of strings) allows you to specify path to other `.bbs.json` that contain animations to merge with this model's animations
+    * `normals` (boolean) allows you to toggle normals (`false` (disabled), under the hood makes all of model's normals `(0, 1, 0)`)
+    * `culling` (boolean) allows you to disable face culling, so both sides of the model are visible (Aloan)
 * Added mask to world editor (which allows you to pick which blocks are affected by tool and brushes during editing)
 * Added snap sound when taking screenshot (TheGreatFelix)
 * Added beep sound when starting/stopping video recording
