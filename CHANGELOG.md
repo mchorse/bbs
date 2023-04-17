@@ -2,6 +2,8 @@
 
 This update is all over the place. The biggest feature in this update, in my opinion is basic voxel lighting. It's still buggy and unfinished (because there is no sky light, only torch light). Other cool features are joystick model control, world settings presets, and world editor's masks and improvements to spray and smooth brushes.
 
+Special thanks to Kirkus for updating language strings!
+
 * Added `IScriptPlayer.canControl()` and `IScriptPlayer.setControl(boolean)`, which allows you to lock and unlock player controls via scripts
 * Added color filter option to **Model** (`bbs:model`) form
 * Added voxel block light propagation (aka torch light)
@@ -30,6 +32,8 @@ This update is all over the place. The biggest feature in this update, in my opi
 * Added ability to record separate groups (for example, just the position, or just the rotation) in scene panel
 * Added keybind to open World editor in the dashboard (Ctrl + Shift + B)
 * Added saving camera's position and rotation upon exiting the world (Aloan)
+* Added skybox form option to world settings
+* Added input delay to textbox fields in texture picker and camera world object so that it wouldn't spam errors in the log
 * Changed spray brush's chance range from `0..1` (normalized percentage) to `0..100` (percentage)
 * Changed maximum memory limit for uploading models to GPU from `4mb` to `8mb`
 * Improved smooth brush by changing the algorithm to height map blurring
@@ -47,8 +51,11 @@ This update is all over the place. The biggest feature in this update, in my opi
 * Fixed save button not changing when toggling collision and collision box options (Aloan)
 * Fixed pasting entities didn't work (Aloan)
 * Improved player recording code and removed unnecessary feature that were present in Blockbuster (teleport back)
+* Moved sky and fog options from Settings > App to World settings
 * Removed world time trigger block
 * Removed replace mode in world editor (because it's basically replaced by masks)
+* Removed teleport back option in scene replays
+* Removed skybox image world settings option
 
 ## BBS 0.6.1
 
