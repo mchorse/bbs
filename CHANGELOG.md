@@ -1,3 +1,33 @@
+## BBS 0.7.1
+
+This little update features a couple of fixes, Portuguese 🇧🇷 translation, and better machinima recording tools.
+
+Special thanks to Draacoun and Aloan for Portuguese translation, and Kirkus for Ukrainian translation!
+
+* Added Portuguese 🇧🇷 translation by Draacoun and Aloan
+* Added a feature in world editor whenever a block can't be ray traced, it will pick a block in the air in the direction of mouse (Ctrl + Mouse wheel to control distance)
+* Added removing blocks with paste brush in the world editor
+* Added video width and video height options to BBS' video recording settings
+* Added preview to camera editor
+* Added idle to dolly, path and keyframe converters (Right click > Convert clip... on camera timeline)
+* Added body part rendering within UI for **Model** (`bbs:model`) form
+* Added `step` interpolation support for Blockbench models (Aloan)
+* Added form updating in the form editor
+* Added **Form** (`bbs:form`) action to player recordings
+* Added player recording editing within camera editor when scene clip is selected
+* Added offset (allows to shift the model) and rotations (generates 3 extra block models rotated  90, 180 and 270 degrees horizontally) options to combined block model (Aloan)
+* Changed partial player recording to only overwrite the data that was recorded and not frames entirely
+* Fixed startup crash due to some graphics drivers being stricter (reserved keywords were used) (Aloan)
+* Fixed `query.yaw_speed` model variable was fixed
+* Fixed model meshes not respecting pivot point for translation
+* Fixed pressing Enter REPL breaks down the line
+* Fixed particle effect identifier tooltip (Draacoun)
+* Fixed replay not being editable when closing and opening scene menu
+* Fixed scene actors remaining in the world if BBS was closed during the scene
+* Fixed scene actors remaining in the world if camera editor started editing another camera work
+* Fixed crash when loading BBS with no sound devices enabled (Draacoun)
+* Removed letterbox and overlay from BBS' camera editor settings
+
 ## BBS 0.7
 
 This update is all over the place. The biggest feature in this update, in my opinion is basic voxel lighting. It's still buggy and unfinished (because there is no sky light, only torch light). Other cool features are joystick model control, world settings presets, and world editor's masks and improvements to spray and smooth brushes.
