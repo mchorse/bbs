@@ -1,3 +1,45 @@
+## BBS 0.7.2
+
+More to come...
+
+* Added player recording timeline keybinds to jump to next (`]`) and previous (`[`) actions
+* Added camera editor jump forward and backward keybinds to move cursor more than one tick (jump is configurable in settings)
+* Added support for Blockbench's UV rotations (Aloan)
+* Added a feature to click on actors (when scene clip is selected) to open player recording editor for that actor
+* Added body parts merging when tweening forms
+* Added context menu to world setting's shading direction to set it up from camera
+* Added ID to world objects and `IScriptWorld.getObject(String)`, `IScriptWorld.getObjects(String)`, `IScriptWorld.getAllObject()` to query world objects from ID
+* Added a feature to offset block placement in world editor by scrolling mouse wheel while holdin Ctrl
+* Added `overlap` property to model's `config.json` to allow rendering models on top of other models without Z-fighting
+* Added entity speed property to entity's basic component
+* Added adding a keyframe clip generated from player recording in camera editor panel (`Add clip... > From player recording...`)
+* Added preview of tween duration to player recording editor timeline
+* Added custom user form categories
+* Changed F3 keybind to be global (previously it worked only in the world)
+* Changed default form action values: duration `10` (was `0`) and tween enabled (was `disabled`)
+* Changed not selected tiles much brighter (Aloan)
+* Changed font renderer to use color multiplication only for shadows
+* Changed fade in and fade out fields to be in a single row in camera clip's envelopes
+* Changed some keybinds (next and previous frame, next and previous action, next and previous clip) to trigger more than once when the key is held
+* Changed trackpad fields to always evaluate the content of the textbox on unfocus
+* Changed world object clicking in REPL panel to generate new ID based code
+* Changed shift duration keybind/context menu action to shift offset to the cursor while keeping duration in the same place
+* Improved form action editing by reflecting values in the world and making form palette open only within timeline's frame
+* Improved shift to cursor keybind/context menu action to relatively shift all of the selected clips
+* Fixed UV inconsistencies with Blockbench models
+* Fixed camera walk mode messes up camera editing by disabling walk mode when entering camera editor
+* Fixed body parts not syncing correctly with form action
+* Fixed resize bar in camera editor appearing in wrong order
+* Fixed a bug with binary data not being correctly read due to overflow of keys
+* Fixed first-person form crash (Toray)
+* Fixed some grammar issues in English translation by Aloan
+* Fixed idle clip to dolly clip converter not taking in account yaw and pitch
+* Fixed player recording editor's teleport tool
+* Fixed multiple line form category
+* Fixed body parts canceling animations
+* Fixed crash with particle effect form editor
+* Removed Manual (`bbs:manual`) clip
+
 ## BBS 0.7.1
 
 This little update features a couple of fixes, Portuguese 🇧🇷 translation, and better machinima recording tools.
